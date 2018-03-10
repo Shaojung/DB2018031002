@@ -1,5 +1,6 @@
 package com.example.student.db2018031002;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,5 +26,10 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sp.edit();
         editor.putString("nickname", "Peter");
         editor.commit();
+    }
+    public void clickSettings(View v)
+    {
+        Intent it = new Intent(MainActivity.this, SettingsActivity.class);
+        startActivity(it);
     }
 }
