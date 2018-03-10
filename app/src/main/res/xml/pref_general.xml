@@ -29,5 +29,11 @@
         android:negativeButtonText="@null"
         android:positiveButtonText="@null"
         android:title="@string/pref_title_add_friends_to_messages" />
+    <EditTextPreference
+        android:defaultValue="nickname"
+        android:key="sp_nickname"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Nick Name" />
 
 </PreferenceScreen>
